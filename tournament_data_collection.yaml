@@ -15,20 +15,18 @@ agents: ['AgentKN',
          'ConcederAgent',
          'MICROAgent',
          'HybridAgent',
-         'NiceTitForTat',
+         'CUHKAgent',
          'YXAgent',
          'PonPokoAgent',
          'SAGAAgent',
          'Rubick',
          'Kawaii',
-         'Caduceus',
-         'NegoFormerAgent',
-         'ParetoWalkerAgent']
+         'Atlas3Agent']
 
 ## Domain
 # You need to define domains as a list of strings.
 # Each string represents a domain name in 'domains' directory.
-domains: ['50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61']
+domains: ['5', '6', '7', '9', '10', '11', '12', '13', '14', '21', '22', '23', '25', '26', '27', '28', '29', '30', '37', '38', '39', '41', '42', '43', '44', '45', '46']
 
 ## Logger
 # You can define loggers as a list of strings.
@@ -40,18 +38,15 @@ loggers: ['BidSpaceLogger',
           'FinalGraphsLogger',
           'UtilityDistributionLogger',
           'TournamentSummaryLogger',
-          'agents.NegoFormerAgent.ParetoLogger.ParetoLogger',
-          'agents.NegoFormerAgent.PredictionLogger.PredictionLogger',
-          'agents.NegoFormerAgent.CandidatesLogger.CandidatesLogger',
-          'agents.ParetoWalkerAgent.ParetoLogger.ParetoLogger',
-          'agents.ParetoWalkerAgent.CandidatesLogger.CandidatesLogger']
+          'EstimatedLogger',
+          'EstimatorOnlyFinalMetricLogger']
 
 ## Opponent Model
 # You can define opponent models as a list of strings.
 # Each string represents the class name of an opponent model.
 # You can either write the class name from 'nenv.OpponentModel' Python module or full path to the class.
 # Note that the class must be a subclass of 'AbstractOpponentModel' class
-estimators: []
+estimators: ['ClassicFrequencyOpponentModel', 'FrequencyWindowOpponentModel']
 
 ## Other
 # Whether an agent will negotiate with itself.

@@ -9,4 +9,3 @@ from nenv.OpponentModel.EstimatedPreference import EstimatedPreference
 from nenv.OpponentModel.ClassicFrequencyOpponentModel import ClassicFrequencyOpponentModel
 from nenv.OpponentModel.FrequencyWindowOpponentModel import FrequencyWindowOpponentModel
 from nenv.OpponentModel.BayesianOpponentModel import BayesianOpponentModel
-from nenv.OpponentModel.UncertaintyOpponentModel import UncertaintyOpponentModel
